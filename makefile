@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -Wall -Wextra -std=c++1x
+CFLAGS = -Wall -Wextra -std=c++0x
 LFLAGS = 
 
 .PNOHY: all clean test
