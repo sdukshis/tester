@@ -32,7 +32,7 @@ struct caller {
 
 #define CAT2(X, Y) X ## Y
 #define CAT(X, Y) CAT(X, Y)
-#define TEST(NAME) const char STR_ ## NAME[] = #NAME; \
+#define TEST(NAME) constexpr char STR_ ## NAME[] = #NAME; \
                    caller<STR_ ## NAME> NAME = []
 #define ASSERT(EXPR) if (!(EXPR)) throw assertion_failed(#EXPR, __FILE__, __LINE__);
                    

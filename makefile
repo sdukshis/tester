@@ -1,5 +1,5 @@
-CC = g++
-CFLAGS = -Wall -Wextra -std=c++0x
+CC = g++-4.9
+CFLAGS = -Wall -Wextra -std=c++1y
 LFLAGS = 
 
 .PNOHY: all clean test
@@ -12,7 +12,7 @@ tests:test.o
 test.o: test.cpp tester.h
 	$(CC) -c $(CFLAGS) -o $@ $<
 
-test:
+test: tests
 	./tests
 
 clean:

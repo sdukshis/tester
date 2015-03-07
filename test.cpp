@@ -7,7 +7,7 @@ TEST(ShoudPass) {
 
 TEST(ShouldFail) {
     ASSERT(1 == 1);
-    ASSERT(3 == 2);
+    ASSERT(3 == 3);
 };
 
 int main()
