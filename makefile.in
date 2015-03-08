@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -Wall -Wextra -std=c++1y
+CXXFLAGS = -Wall -Wextra -std=c++0x
 LFLAGS = 
 
 .PNOHY: all clean test
@@ -10,7 +10,7 @@ tests:test.o
 	$(CC) $(LFLAGS) -o $@ $^
 
 test.o: test.cpp tester.h
-	$(CC) -c $(CFLAGS) -o $@ $<
+	$(CC) -c $(CXXFLAGS) -o $@ $<
 
 test: tests
 	./tests
