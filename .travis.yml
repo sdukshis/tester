@@ -3,5 +3,6 @@ compiler:
     - clang
     - gcc
 script:
+    - sh configure
     - make
     - make test
